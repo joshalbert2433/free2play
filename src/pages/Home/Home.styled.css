@@ -7,21 +7,35 @@
     width: 1140px;
     height: 100vh;
     margin: 0 auto;
-}
-
-.home_card_container {
-    padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
-    width: 60%;
+}
+
+.home_game {
+    /* width: 60%; */
+}
+.home_card_container {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    /* width: 90%; */
     background-color: rgb(50, 56, 62);
     border-radius: 5px;
+    box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.home_card_container > * {
+    /* margin-left: 10px; */
 }
 
 .home_game_details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* margin: -20px 0; */
+    margin: 0 20px;
+
     /* align-content: space-between; */
     /* align-items: center; */
     /* background-color: greenyellow; */
@@ -53,4 +67,23 @@
     padding: 2px 5px;
     background-color: #aaaaaa;
     color: rgb(39, 43, 48);
+}
+
+.home_game_platform {
+    align-self: center;
+}
+
+.most_played_container {
+    width: 30%;
+}
+
+.most_played_image {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.most_played_card > * {
+    margin-bottom: 20px;
 }
