@@ -1,0 +1,17 @@
+.main_nav {
+    background-color: rgb(39, 43, 48);
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_container {
+    width: 1140px;
+}
+
+.logo {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
