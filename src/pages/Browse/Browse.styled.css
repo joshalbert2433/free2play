@@ -1,0 +1,19 @@
+.browse_content_container {
+    width: 1140px;
+    margin: 0 auto;
+    padding-top: 80px;
+    /* background-color: rebeccapurple; */
+}
+
+.browse_filter_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.browse_card_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

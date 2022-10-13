@@ -1,0 +1,62 @@
+.browse_card {
+    width: 23%;
+    background-color: rgb(50, 56, 62);
+    box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.browse_card:hover {
+    transform: scale(1.04);
+}
+
+.browse_card_header {
+    /* height: 2/s00px; */
+}
+
+.browse_card_header > * {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.browse_card_title {
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.browse_card_content {
+    padding: 20px 10px;
+    /* line-height: 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.browse_card_description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    align-items: center;
+    /* height: 10px; */
+}
+
+.browse_card_footer {
+    padding: 0 10px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.browse_card_footer span {
+    border-radius: 3px;
+    font-size: 12px;
+    display: inline-block;
+    padding: 2px 5px;
+    background-color: #aaaaaa;
+    color: rgb(39, 43, 48);
+}

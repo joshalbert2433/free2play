@@ -2,8 +2,12 @@
     background-color: rgb(39, 43, 48);
     height: 55px;
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid rgba(28, 28, 28, 2.6);
 }
 
 .nav_container {
@@ -14,4 +18,12 @@
     font-size: 30px;
     color: white;
     text-decoration: none;
+}
+
+.nav_container ul {
+    display: flex;
+}
+
+.nav_container ul li {
+    list-style: none;
 }

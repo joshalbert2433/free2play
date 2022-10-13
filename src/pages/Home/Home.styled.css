@@ -1,6 +1,7 @@
 .home_header {
     height: 400px;
     background-color: antiquewhite;
+    margin-top: 60px;
 }
 
 .home_content {
@@ -9,6 +10,11 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
+}
+
+.home_game_container h2,
+.most_played_container h2 {
+    margin: 20px 0;
 }
 
 .home_game {
@@ -22,7 +28,7 @@
     background-color: rgb(50, 56, 62);
     border-radius: 5px;
     box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.2);
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .home_card_container > * {

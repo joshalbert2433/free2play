@@ -1,13 +1,22 @@
 import React from "react";
 import "./NavBar.styled.css";
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
         <nav className="main_nav">
             <div className="nav_container">
-                <a href="/" className="logo">
+                <Link to="/" className="logo">
                     Free2Play
-                </a>
+                </Link>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/Browse">Browse</Link>
+                    </li>
+                </ul>
             </div>
         </nav>
     );
