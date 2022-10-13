@@ -4,6 +4,7 @@ import "./GameDetails.styled.css";
 import { useParams } from "react-router-dom";
 import FreeToPlay from "../../api/FreeToPlay";
 import { Link } from "react-router-dom";
+import ScreenshotCard from "../../components/ScreenshotCard/ScreenshotCard";
 
 import {
     Smiley,
@@ -96,7 +97,7 @@ function GameDetails() {
                 </div>
                 <div className="game_details_main">
                     <div className="game_details_header">
-                        <h1 className="game_details_title">Dark Orbit</h1>
+                        <h1 className="game_details_title">{title}</h1>
                         <div className="text_container">
                             <Star size={18} color="#AAAAAA" weight="fill" />
                             <p>Mostly Positive</p>
@@ -150,6 +151,23 @@ function GameDetails() {
                             </div>
                         </div>
                     </div>
+                    {screenshots && (
+                        <div className="game_details_screenshot_container">
+                            <h2>{title} Screenshots</h2>
+                            <div className="game_details_screenshot">
+                                {screenshots.map((data) => {
+                                    return (
+                                        <ScreenshotCard
+                                            key={data.id}
+                                            image_url={data.image}
+                                        />
+                                        // console.log(data.id, data.image)
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    )}
+
                     {minimum_system_requirements && (
                         <div className="game_details_system_req_container">
                             <h2>Minimum System Requirements (Windows)</h2>
