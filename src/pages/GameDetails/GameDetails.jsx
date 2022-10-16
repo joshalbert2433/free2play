@@ -4,7 +4,7 @@ import "./GameDetails.styled.css";
 import { useParams } from "react-router-dom";
 import FreeToPlay from "../../api/FreeToPlay";
 import { Link } from "react-router-dom";
-import ScreenshotCard from "../../components/ScreenshotCard/ScreenshotCard";
+import { ScreenshotCard } from "../../components";
 
 import {
     Smiley,

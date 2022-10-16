@@ -2,21 +2,28 @@
     background-color: rgb(39, 43, 48);
     height: 55px;
     display: flex;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgba(28, 28, 28, 2.6);
+    z-index: 200;
 }
 
 .nav_container {
     width: 1140px;
 }
 
+.nav_container .highlight {
+    color: #18b0e2;
+    font-weight: 900;
+}
+
 .logo {
     font-size: 30px;
     color: white;
+    font-weight: 600;
     text-decoration: none;
 }
 

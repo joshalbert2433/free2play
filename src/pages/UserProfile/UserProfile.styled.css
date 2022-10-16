@@ -1,0 +1,224 @@
+.user_profile_main_container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    /* padding: 20px; */
+    /* padding-top: 80px; */
+    background-color: var(--gradient-background);
+}
+
+.user_profile_main_container .main_content {
+    /* width: 70%; */
+    /* display: flex; */
+}
+
+.user_profile_header {
+    display: flex;
+    justify-content: space-between;
+    background: radial-gradient(
+            farthest-side at bottom right,
+            var(--gradient-right),
+            transparent 500px
+        ),
+        radial-gradient(
+            farthest-corner at bottom left,
+            var(--gradient-left),
+            transparent 600px
+        );
+}
+
+.user_profile_header_main {
+    width: 70%;
+    display: flex;
+    padding: 20px;
+}
+
+.user_profile_header_sub {
+    width: 30%;
+    padding: 20px;
+}
+
+.user_profile_header_sub .level_container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.level_container p {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.user_profile_header_sub .badge_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.user_profile_header_sub .badge_container img {
+    height: 60px;
+    width: 60px;
+}
+
+.user_profile_header_sub .level_container .level_circle {
+    display: block;
+    padding: 5px;
+    border: 3px solid yellow;
+    border-radius: 100%;
+}
+
+.user_profile_avatar {
+    justify-content: center;
+    align-items: center;
+}
+
+.user_profile_avatar img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #18b0e2;
+    box-sizing: initial;
+    border-radius: 100%;
+}
+
+.user_profile_header .user_profile_details {
+    padding: 0 20px;
+}
+
+.user_profile_header .user_profile_details > * {
+    margin-bottom: 10px;
+}
+
+.user_profile_details .user_profile_summary {
+    margin-top: 25px;
+}
+
+.user_profile_content {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+    background: radial-gradient(
+            farthest-side at top right,
+            var(--gradient-right),
+            transparent 500px
+        ),
+        radial-gradient(
+            farthest-corner at top left,
+            var(--gradient-left),
+            transparent 600px
+        ),
+        radial-gradient(
+            farthest-corner at bottom right,
+            var(--gradient-background-right),
+            transparent 500px
+        ),
+        radial-gradient(
+            farthest-corner at bottom left,
+            var(--gradient-background-left),
+            transparent 600px
+        );
+}
+
+.user_profile_content_main {
+    padding: 20px;
+    width: 70%;
+}
+
+.user_profile_content_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_profile_artwork {
+    /* background-color: var(--gradient-background); */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* padding: 20px; */
+    /* margin: ; */
+    margin-top: 20px;
+}
+
+.user_profile_artwork .content > * {
+    padding: 10px;
+}
+
+.user_profile_artwork .content .title {
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    font-weight: 600;
+    /* padding: ; */
+    background-color: var(--color-showcase-header);
+}
+
+.user_profile_artwork .artwork_image {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+}
+
+.user_profile_content_sub {
+    /* display: flex; */
+    /* gap: 20px; */
+    width: 30%;
+    padding: 20px;
+    /* height: 1400px; */
+    /* margin: 20px 20px 0px 0; */
+    /* margin-right: 10px; */
+}
+
+.user_profile_content .sub_container {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    min-height: 600px;
+}
+
+.user_profile_content_sub .sub_title {
+    color: #18b0e2;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.user_profile_content_sub > * {
+    margin-bottom: 20px;
+}
+
+.user_profile_content_sub .account_link > * {
+    margin: 15px 0;
+    /* display: flex; */
+}
+
+.account_link .link_bold {
+    font-size: 1.6rem;
+    display: inline-block;
+    /* align-self: center; */
+}
+
+.user_profile_content_sub .friends_container .friend_card {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    gap: 20px;
+}
+
+.user_profile_content_sub .friends_container {
+    margin-top: 40px;
+    position: relative;
+}
+
+.user_profile_content_sub .friends_container .friend_card img {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #aaaaaa;
+}
+
+.user_profile_content_sub .friends_container .friend_card .level_float {
+    position: absolute;
+    right: 10px;
+    display: block;
+    border: 2px solid yellow;
+    border-radius: 100%;
+    padding: 6px;
+    font-weight: 600;
+}

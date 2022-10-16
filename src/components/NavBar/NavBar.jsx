@@ -7,7 +7,7 @@ function NavBar() {
         <nav className="main_nav">
             <div className="nav_container">
                 <Link to="/" className="logo">
-                    Free2Play
+                    Free<span className="highlight">2</span>Play
                 </Link>
                 <ul>
                     <li>
@@ -15,6 +15,9 @@ function NavBar() {
                     </li>
                     <li>
                         <Link to="/Browse">Browse</Link>
+                    </li>
+                    <li>
+                        <Link to="/UserProfile">Profile</Link>
                     </li>
                 </ul>
             </div>
