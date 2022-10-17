@@ -7,6 +7,14 @@ function UserProfile() {
         <>
             <NavBar />
             <div className="user_profile_main_container">
+                <div className="user_background">
+                    <video autoPlay muted loop>
+                        <source
+                            src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/1203420/96bacf40b7534eac4ee56d9a033c7498e2246d8f.webm"
+                            type="video/mp4"
+                        />
+                    </video>
+                </div>
                 <div className="main_content">
                     <div className="user_profile_header">
                         <div className="user_profile_header_main">
@@ -20,12 +28,11 @@ function UserProfile() {
                                 <h2>Azusa</h2>
                                 <p>Philippines</p>
                                 <p className="user_profile_summary">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Quae illum, assumenda
-                                    velit eveniet autem dolore incidunt at ex
-                                    inventore odit dolorem, fuga aspernatur
-                                    voluptatem recusandae quos nobis repellendus
-                                    aut architecto.
+                                    Human kind can not gain anything without
+                                    first giving something in return. To obtain
+                                    something of equal value must be lost. That
+                                    is Alchemy's first law of equivalent
+                                    exchange.
                                 </p>
                             </div>
                         </div>
@@ -50,7 +57,13 @@ function UserProfile() {
                         <div className="user_profile_content_main">
                             <div className="user_profile_content_header">
                                 <h2>Artwork Showcase</h2>
-                                <button>Upload Artwork</button>
+                                <button
+                                    onClick={() => {
+                                        alert("Di pa po gawa :)");
+                                    }}
+                                >
+                                    Upload Artwork
+                                </button>
                             </div>
                             <div className="user_profile_artwork">
                                 <div className="content">

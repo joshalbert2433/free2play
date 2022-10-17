@@ -1,10 +1,28 @@
 .user_profile_main_container {
-    width: 1140px;
+    width: 940px;
     margin: 0 auto;
     display: flex;
     /* padding: 20px; */
     /* padding-top: 80px; */
+    min-height: 100vh;
+    background: transparent;
     background-color: var(--gradient-background);
+}
+
+.user_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    /* width: 100vh; */
+    /* overflow: hidden; */
+    /* width: 900px; */
+    /* overflow: hidden; */
+}
+
+.user_background > * {
+    width: 100%;
+    /* height: 100vh; */
 }
 
 .user_profile_main_container .main_content {
@@ -93,6 +111,7 @@
 
 .user_profile_details .user_profile_summary {
     margin-top: 25px;
+    font-size: 0.9rem;
 }
 
 .user_profile_content {
@@ -130,6 +149,19 @@
 .user_profile_content_header {
     display: flex;
     justify-content: space-between;
+}
+
+.user_profile_content_header button {
+    padding: 10px 15px;
+    font-weight: 600;
+    background-color: var(--btn-background);
+    border: none;
+}
+
+.user_profile_content_header button:hover {
+    cursor: pointer;
+    color: white;
+    background: var(--btn-background-hover);
 }
 
 .user_profile_artwork {

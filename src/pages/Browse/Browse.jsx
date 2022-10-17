@@ -78,6 +78,11 @@ function Browse() {
                             <option value="mmo">MMO</option>
                             <option value="mmorpg">MMORPG</option>
                             <option value="shooter">Shooter</option>
+                            <option value="card">Card</option>
+                            <option value="strategy">Strategy</option>
+                            <option value="survival">Survival</option>
+                            <option value="pvp">PVP</option>
+                            <option value="battle-royale">Battle Royale</option>
                         </select>
                     </div>
                     <div className="browse_sort">

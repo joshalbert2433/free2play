@@ -1,13 +1,20 @@
 import React from "react";
 import "./HomeCard.styled.css";
 import { WindowsLogo, GoogleChromeLogo } from "phosphor-react";
+import { Link } from "react-router-dom";
 
 function HomeCard(props) {
     // console.log(props);
     const { title, short_description, genre, thumbnail, platform, id } =
         props.data;
     return (
-        <div className="home_card_container">
+        <Link
+            to={{
+                pathname: `/GameDetails/${id}`,
+            }}
+            className="home_card_container"
+            id={id}
+        >
             <img className="home_game_thumbnail" src={thumbnail} alt="game" />
             <div className="home_game_details">
                 <a href="/" className="home_game_title">
@@ -26,7 +33,7 @@ function HomeCard(props) {
                     <GoogleChromeLogo size={32} />
                 )}
             </div>
-        </div>
+        </Link>
     );
 }
 

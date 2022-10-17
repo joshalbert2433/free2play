@@ -25,7 +25,7 @@ function Home() {
     return (
         <>
             <NavBar />
-            <section className="home_header"></section>
+            {/* <section className="home_header"></section> */}
             <section className="home_content">
                 <div className="home_game_container">
                     <h2>Recently Added</h2>

@@ -13,6 +13,12 @@
     margin: 20px 0;
 }
 
+.browse_filter_container select {
+    padding: 5px 10px;
+    color: black;
+    margin-left: 10px;
+}
+
 .browse_card_container {
     display: flex;
     justify-content: space-between;

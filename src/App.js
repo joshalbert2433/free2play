@@ -3,6 +3,7 @@ import Home from "./pages/Home/Home";
 import Browse from "./pages/Browse/Browse";
 import GameDetails from "./pages/GameDetails/GameDetails";
 import UserProfile from "./pages/UserProfile/UserProfile";
+import Login from "./pages/Login/Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                     path="/UserProfile"
                     element={<UserProfile />}
                 ></Route>
+                <Route exact path="/Login" element={<Login />}></Route>
             </Routes>
         </Router>
     );
